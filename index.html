@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PiroPista – pirográfia, cérnaképek, egyedi fatáblák</title>
+  <meta name="description" content="Szabó István Attila (PiroPista) kézzel készített munkái: fába égetett képek, cérnaképek, cégtáblák és egyedi ajándékok rendelésre.">
+  <link rel="canonical" href="https://piropista.hu/">
+  <meta name="theme-color" content="#f4eee4">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    // Téma beállítása még kirajzolás előtt, hogy ne villanjon
+    (function () {
+      try {
+        var t = localStorage.getItem("tema");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="hu_HU">
+  <meta property="og:site_name" content="PiroPista">
+  <meta property="og:title" content="PiroPista – fába égetem, amit elképzeltél">
+  <meta property="og:description" content="Pirográfia, cérnaképek, cégtáblák és egyedi ajándékok rendelésre. Szabó István Attila munkái.">
+  <meta property="og:url" content="https://piropista.hu/">
+  <meta property="og:image" content="https://piropista.hu/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="preload" href="fonts/fraunces-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/karla-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Szabó István Attila",
+    "alternateName": "PiroPista",
+    "url": "https://piropista.hu/",
+    "jobTitle": "Pirográfus, kézműves",
+    "knowsAbout": ["pirográfia", "cérnakép", "string art", "fagravírozás", "egyedi ajándék"],
+    "sameAs": [
+      "https://www.facebook.com/ecko6",
+      "https://www.facebook.com/groups/2802925033284718/",
+      "https://www.instagram.com/piro.pista/"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#tartalom">Ugrás a tartalomra</a>
+
+  <header class="site-header" id="fejlec">
+    <div class="wrap header-inner">
+      <a class="brand" href="#" aria-label="PiroPista – vissza az oldal tetejére">
+        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><use href="#logo-p"/></svg>
+        <span class="brand-name">Piro<span>Pista</span></span>
+      </a>
+      <nav class="nav" id="menu" aria-label="Fő navigáció">
+        <a href="#munkak">Munkák</a>
+        <a href="#mit-vallalok">Mit vállalok</a>
+        <a href="#igy-keszul">Így készül</a>
+        <a href="#rolam">Rólam</a>
+        <a class="nav-cta" href="#kapcsolat">Írj nekem</a>
+      </nav>
+      <div class="header-tools">
+        <button class="theme-toggle" type="button" aria-label="Sötét mód bekapcsolása" title="Világos / sötét mód">
+          <svg class="ico-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.6A8.5 8.5 0 0 1 9.4 3.5a8.5 8.5 0 1 0 11.1 11.1Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          <svg class="ico-sun" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.5 1.5M17.2 17.2l1.5 1.5M5.3 18.7l1.5-1.5M17.2 6.8l1.5-1.5"/></g></svg>
+        </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+          <span class="nav-toggle-bars" aria-hidden="true"></span>
+          <span class="sr-only">Menü</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="tartalom">
+
+    <!-- Nyitó -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <p class="kicker">Pirográfia · cérnaképek · egyedi fatáblák</p>
+          <h1>Fába égetem, amit <em class="burn">elképzeltél.</em></h1>
+          <p class="lead">Szabó István Attila vagyok, a legtöbben csak Pistaként ismernek. Fára égetek képeket, feliratokat és logókat, szögekből és cérnából pedig falra való képeket készítek. Rendelésre dolgozom: ajándéknak, otthonra vagy az üzleted falára.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#kapcsolat">Rendelnék valamit</a>
+            <a class="btn btn-ghost" href="#munkak">Megnézem a munkákat</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <figure class="hero-main">
+            <img src="img/munkak/szarvas.webp" width="1200" height="1600" alt="Szarvas formájú cérnakép: a fa alapon a szarvas sziluettje, körülötte sűrűn feszített fehér cérna" fetchpriority="high">
+            <figcaption>Szarvas, cérnakép fa alapon</figcaption>
+          </figure>
+          <figure class="hero-side">
+            <img src="img/munkak/kicsi/jaguar.webp" width="540" height="720" alt="Fára égetett jaguár, sötét háttérrel" loading="lazy">
+          </figure>
+          <svg class="stamp" viewBox="0 0 200 200" aria-hidden="true">
+            <defs><path id="kor" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs>
+            <circle cx="100" cy="100" r="96" class="stamp-ring"/>
+            <text class="stamp-text"><textPath href="#kor" startOffset="0" textLength="458" lengthAdjust="spacing">Pista neked éget! · kézzel készült ·</textPath></text>
+            <use href="#logo-p" x="70" y="70" width="60" height="60" class="stamp-p"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Szolgáltatások -->
+    <section class="section services" id="mit-vallalok" aria-labelledby="mit-vallalok-cim">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="kicker">Mit vállalok</p>
+          <h2 id="mit-vallalok-cim">Négyféle munkát vállalok.</h2>
+        </header>
+
+        <div class="service-list">
+          <article class="service">
+            <span class="service-num">01</span>
+            <div class="service-body">
+              <h3>Égetett képek fára</h3>
+              <p>Ez a pirográfia, innen jön a név is. Előcsiszolt, kezelt fafelületre égetem a mintát, aztán több rétegben lakkozom, hogy sokáig szép maradjon. A vonalas, árnyékolt munkákat pirográffal csinálom kézzel. A nagyon finom, ismétlődő mintákhoz lézert használok.</p>
+              <ul class="tags">
+                <li>autók, motorok szakrajzzal</li>
+                <li>háziállat fotó alapján</li>
+                <li>mandala és állatminták</li>
+                <li>italcímkék, logók</li>
+              </ul>
+            </div>
+            <img class="service-img" src="img/munkak/kicsi/citroen-ds.webp" width="540" height="720" alt="Citroën DS fára égetve, szakrajzzal" loading="lazy">
+          </article>
+
+          <article class="service">
+            <span class="service-num">02</span>
+            <div class="service-body">
+              <h3>Cérnaképek</h3>
+              <p>Fa alapra kimérem és kiszögelem a formát, aztán a szögek közé feszítem a cérnát, szálról szálra. Lehet letisztult, egyszínű, mint a szarvas, vagy tele színnel, mint a színkör. Néha közben elszakad a cérna, akkor azt a részt elölről kezdem. A végeredmény megéri.</p>
+              <ul class="tags">
+                <li>állatok, sziluettek</li>
+                <li>esküvői kép névvel, dátummal</li>
+                <li>logó cérnából</li>
+                <li>geometrikus, absztrakt minták</li>
+              </ul>
+            </div>
+            <img class="service-img" src="img/munkak/kicsi/szinkor.webp" width="540" height="720" alt="Kerek színkör cérnakép, a szivárvány színeivel" loading="lazy">
+          </article>
+
+          <article class="service">
+            <span class="service-num">03</span>
+            <div class="service-body">
+              <h3>Táblák üzletnek és otthonra</h3>
+              <p>Cégtábla, cégér, házszám, vendégváró tábla, házirend, névtábla a gyerekszoba ajtajára. Egy sörözőnek törzsvendég-táblát csináltam, ahol mindenkinek saját, névre szóló korsótartója van. Egy kecskeméti édességboltnak kétoldalas cégért. Ha van logód, abból indulok ki.</p>
+              <ul class="tags">
+                <li>cégtábla, cégér</li>
+                <li>házszám, vendégváró</li>
+                <li>ajtótáblák</li>
+                <li>bár- és pincedekor</li>
+              </ul>
+            </div>
+            <img class="service-img" src="img/munkak/kicsi/candy-shop.webp" width="540" height="720" alt="Kerek, fekete Candy Shop cégér egy kecskeméti édességboltnak" loading="lazy">
+          </article>
+
+          <article class="service">
+            <span class="service-num">04</span>
+            <div class="service-body">
+              <h3>Egyedi ajándékok</h3>
+              <p>Születésnapra, esküvőre, ballagásra, évfordulóra. Ültetőkártya, emlékkép, falióra, teásdoboz, kulcstartó, gravírozott kalapács az örömapának. Fényképet is tudok fára vinni. A legtöbb megrendelésem ilyen, és ezeket a legjobb átadni.</p>
+              <ul class="tags">
+                <li>esküvő, évforduló</li>
+                <li>születésnap, ballagás</li>
+                <li>falióra, doboz, kulcstartó</li>
+                <li>fotó fán</li>
+              </ul>
+            </div>
+            <img class="service-img" src="img/munkak/kicsi/eskuvoi-pillangok.webp" width="720" height="720" alt="Fa pillangó alakú esküvői ültetőkártyák" loading="lazy">
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galéria -->
+    <section class="section gallery" id="munkak" aria-labelledby="munkak-cim">
+      <div class="wrap">
+        <header class="section-head section-head--row">
+          <div>
+            <p class="kicker">Munkák</p>
+            <h2 id="munkak-cim">Válogatás a munkáimból</h2>
+          </div>
+          <p class="section-note">Ez csak egy kis szelet. Sokkal több van a <a href="https://www.facebook.com/groups/2802925033284718/" target="_blank" rel="noopener">PiroPista Facebook-csoportban</a> és <a href="https://www.instagram.com/piro.pista/" target="_blank" rel="noopener">Instagramon</a>.</p>
+        </header>
+
+        <div class="filters" role="group" aria-label="Szűrés kategória szerint">
+          <button type="button" class="filter is-active" data-filter="*" aria-pressed="true">Mind</button>
+          <button type="button" class="filter" data-filter="egetett" aria-pressed="false">Égetett képek</button>
+          <button type="button" class="filter" data-filter="cerna" aria-pressed="false">Cérnaképek</button>
+          <button type="button" class="filter" data-filter="tabla" aria-pressed="false">Táblák</button>
+          <button type="button" class="filter" data-filter="ajandek" aria-pressed="false">Ajándékok</button>
+        </div>
+
+        <div class="grid" id="galeria">
+          <figure class="item" data-cat="egetett">
+            <a href="img/munkak/indian-lany-farkas.webp" data-w="1200" data-h="1600">
+              <img src="img/munkak/kicsi/indian-lany-farkas.webp" width="540" height="720" loading="lazy" alt="Tollkoronás indián lány és üvöltő farkas, fenyődeszkára égetve">
+            </a>
+            <figcaption><strong>Indián lány farkassal</strong><span>Három fenyődeszkára égetve, lakkozva.</span></figcaption>
+          </figure>
+
+          <figure class="item" data-cat="cerna">
+            <a href="img/munkak/flamingok.webp" data-w="1262" data-h="1600">
+              <img src="img/munkak/kicsi/flamingok.webp" width="568" height="720" loading="lazy" alt="Két rózsaszín flamingó cérnakép sötét fa alapon, Forever felirattal">
+            </a>
+            <figcaption><strong>Flamingók</strong><span>Forever felirattal, párnak ajándékba.</span></figcaption>
+          </figure>
+
+          <figure class="item" data-cat="tabla">
+            <a href="img/munkak/torzsvendeg-tabla.webp" data-w="1600" data-h="1200">
+              <img src="img/munkak/kicsi/torzsvendeg-tabla.webp" width="720" height="540" loading="lazy" alt="Törzsvendégek feliratú tábla egy söröző falán, névre szóló korsótartókkal">
+            </a>
+            <figcaption><strong>Törzsvendég-tábla</strong><span>Söröző falára, mindenkinek saját, névre szóló korsóval.</span></figcaption>
+          </figure>
+
+          <figure class="item" data-cat="egetett">
+            <a href="img/munkak/mandala-farkas.webp" data-w="1390" data-h="1600">
+              <img src="img/munkak/kicsi/mandala-farkas.webp" width="625" height="720" loading="lazy" alt="Mandala mintás farkasfej fára égetve">
+            </a>
+            <figcaption><strong>Mandala farkas</strong><span>Részletesen, szépen lassan. Ebben sok óra van.</span></figcaption>
+          </figure>
+
+          <figure class="item" data-cat="ajandek">
+            <a href="img/munkak/veteran-emlekora.webp" data-w="1200" data-h="1600">
+              <img src="img/munkak/kicsi/veteran-emlekora.webp" width="540" height="720" loading="lazy" alt="Kerek fa emlékóra motoros grafikával: 24 órás Veterán Megbízhatósági, Kunmadaras">
+            </a>
+            <figcaption><strong>Emlékóra a szervezőknek</strong><span>24 órás Veterán Megbízhatósági verseny, Kunmadaras, 2026 nyarán.</span></figcaption>
+          </figure>
+
+          <figure class="item" data-cat="cerna">
+            <a href="img/munkak/geometrikus-szarvas.webp" data-w="1200" data-h="1600">
+              <img src="img/munkak/kicsi/geometrikus-szarvas.webp" width="540" height="720" loading="lazy" alt="Geometrikus szarvasfej cérnakép sötét deszkán">
+            </a>
+            <figcaption><strong>Geometrikus szarvas</strong><span>Sötét deszka, világos cérna.</span></figcaption>
+          </figure>
+
+          <figure class="item" data-cat="egetett">
+            <a href="img/munkak/mustang-eleanor.webp" data-w="1600" data-h="1200">
+              <img src="img/munkak/kicsi/mustang-eleanor.webp" width="720" height="540" loading="lazy" alt="1967-es Ford Mustang Shelby GT-500 Eleanor fára égetve">
+            </a>
+            <figcaption><strong>Eleanor</strong><span>1967 Ford Mustang Shelby GT-500. Autós ajándéknak az egyik kedvencem.</span></figcaption>
+          </figure>
+
+          <figure class="item" data-cat="tabla">
+            <a href="img/munkak/candy-shop.webp" data-w="1200" data-h="1600">
+              <img src="img/munkak/kicsi/candy-shop.webp" width="540" height="720" loading="lazy" alt="Kerek Candy Shop cégér egy kecskeméti üzlet falán">
+            </a>
+            <figcaption><strong>Candy Shop, Kecskemét</strong><span>Kétoldalas cégér egy édességbolt bejárata fölé.</span></figcaption>
+          </figure>
+
+          <figure class="item" data-cat="cerna">
+            <a href="img/munkak/pava.webp" data-w="1200" data-h="1600">
+              <img src="img/munkak/kicsi/pava.webp" width="540" height="720" loading="lazy" alt="Kék páva cérnakép sötét fa alapon">
+            </a>
+            <figcaption><strong>Páva</strong><span>Kék árnyalatokból, nagyon sok szöggel.</span></figcaption>
+          </figure>
+
+          <figure class="item" data-cat="ajandek">
+            <a href="img/munkak/kalapacs.webp" data-w="1600" data-h="1200">
+              <img src="img/munkak/kicsi/kalapacs.webp" width="720" height="540" loading="lazy" alt="Kalapács, a nyelére égetett dátummal">
+            </a>
+            <figcaption><strong>Kalapács apának</strong><span>Esküvőre készült, a nyelére égetett köszönettel.</span></figcaption>
+          </figure>
+
+          <figure class="item" data-cat="egetett">
+            <a href="img/munkak/jaguar.webp" data-w="1200" data-h="1600">
+              <img src="img/munkak/kicsi/jaguar.webp" width="540" height="720" loading="lazy" alt="Lopakodó jaguár fára égetve, sötét háttérrel">
+            </a>
+            <figcaption><strong>Jaguár</strong><span>A háttér beégetve, a jaguár a fa saját színe.</span></figcaption>
+          </figure>
+
+          <figure class="item" data-cat="cerna">
+            <a href="img/munkak/amerika-kapitany.webp" data-w="1600" data-h="1566">
+              <img src="img/munkak/kicsi/amerika-kapitany.webp" width="720" height="705" loading="lazy" alt="Amerika Kapitány pajzsa cérnaképként, piros-fehér körökkel és kék közepű csillaggal">
+            </a>
+            <figcaption><strong>Amerika Kapitány pajzsa</strong><span>Piros és fehér cérna, középen kék alapon csillag.</span></figcaption>
+          </figure>
+
+          <figure class="item" data-cat="tabla">
+            <a href="img/munkak/hazirend.webp" data-w="1200" data-h="1600">
+              <img src="img/munkak/kicsi/hazirend.webp" width="540" height="720" loading="lazy" alt="Házirend feliratú égetett fatábla">
+            </a>
+            <figcaption><strong>Házirend</strong><span>„Mindenki hibázik. Mindenki megbocsát.” Előszobába.</span></figcaption>
+          </figure>
+
+          <figure class="item" data-cat="egetett">
+            <a href="img/munkak/citroen-ds.webp" data-w="1200" data-h="1600">
+              <img src="img/munkak/kicsi/citroen-ds.webp" width="540" height="720" loading="lazy" alt="Citroën DS fára égetve, oldal- és felülnézeti szakrajzzal">
+            </a>
+            <figcaption><strong>Citroën DS (1968–1976)</strong><span>Az autó mellé szakrajz is került, több nézetből.</span></figcaption>
+          </figure>
+
+          <figure class="item" data-cat="ajandek">
+            <a href="img/munkak/eskuvoi-pillangok.webp" data-w="1440" data-h="1440">
+              <img src="img/munkak/kicsi/eskuvoi-pillangok.webp" width="720" height="720" loading="lazy" alt="Fa pillangók és LOVE felirat egy esküvői asztalon">
+            </a>
+            <figcaption><strong>Esküvői ültetőkártyák</strong><span>Fa pillangók a vendégek nevével.</span></figcaption>
+          </figure>
+
+          <figure class="item" data-cat="cerna">
+            <a href="img/munkak/basszusgitar.webp" data-w="1200" data-h="1600">
+              <img src="img/munkak/kicsi/basszusgitar.webp" width="540" height="720" loading="lazy" alt="Arany színű basszusgitár cérnakép a valódi hangszer mellett">
+            </a>
+            <figcaption><strong>Basszusgitár</strong><span>A valódi hangszer mellett. Arany cérna, szögekből kirakott felirat.</span></figcaption>
+          </figure>
+
+          <figure class="item" data-cat="tabla">
+            <a href="img/munkak/flintstones.webp" data-w="1600" data-h="1200">
+              <img src="img/munkak/kicsi/flintstones.webp" width="720" height="540" loading="lazy" alt="The Flintstones felirat természetes szélű fadarabon">
+            </a>
+            <figcaption><strong>The Flintstones</strong><span>Felirat egy flippergép fölé, természetes szélű fára.</span></figcaption>
+          </figure>
+
+          <figure class="item" data-cat="egetett">
+            <a href="img/munkak/hektor.webp" data-w="1200" data-h="1600">
+              <img src="img/munkak/kicsi/hektor.webp" width="540" height="720" loading="lazy" alt="Hektor nevű kutya portréja fára égetve">
+            </a>
+            <figcaption><strong>Hektor</strong><span>Kutyaportré fénykép alapján, névvel.</span></figcaption>
+          </figure>
+
+          <figure class="item" data-cat="ajandek">
+            <a href="img/munkak/tacskos-ora.webp" data-w="1204" data-h="1600">
+              <img src="img/munkak/kicsi/tacskos-ora.webp" width="542" height="720" loading="lazy" alt="Fa falióra tacskóval és kis tacskó figurákkal">
+            </a>
+            <figcaption><strong>Tacskós óra</strong><span>Kutyásoknak, a számok között is tacskók.</span></figcaption>
+          </figure>
+
+          <figure class="item" data-cat="cerna">
+            <a href="img/munkak/hold.webp" data-w="1200" data-h="1600">
+              <img src="img/munkak/kicsi/hold.webp" width="540" height="720" loading="lazy" alt="Kerek, kék cérnakép, középen a Hold">
+            </a>
+            <figcaption><strong>Hold</strong><span>Mélykék cérna, középen a Hold.</span></figcaption>
+          </figure>
+
+          <figure class="item" data-cat="tabla">
+            <a href="img/munkak/naes-logo.webp" data-w="1534" data-h="1600">
+              <img src="img/munkak/kicsi/naes-logo.webp" width="690" height="720" loading="lazy" alt="NAÉS logó fehér cérnából fekete alapon">
+            </a>
+            <figcaption><strong>NAÉS logó</strong><span>Egy bár logója cérnaképként, a falukra.</span></figcaption>
+          </figure>
+
+          <figure class="item" data-cat="egetett">
+            <a href="img/munkak/bagoly.webp" data-w="1200" data-h="1600">
+              <img src="img/munkak/kicsi/bagoly.webp" width="540" height="720" loading="lazy" alt="Mandala mintás bagoly ágon ülve, fára égetve">
+            </a>
+            <figcaption><strong>Bagoly</strong><span>Mandala-mintás tollazat, ágon ülve.</span></figcaption>
+          </figure>
+
+          <figure class="item" data-cat="ajandek">
+            <a href="img/munkak/motoros-kep.webp" data-w="1600" data-h="1200">
+              <img src="img/munkak/kicsi/motoros-kep.webp" width="720" height="540" loading="lazy" alt="Motoros fénykép fára nyomtatva, születésnapi felirattal">
+            </a>
+            <figcaption><strong>Fotó fán</strong><span>30. születésnapra, egy saját motoros fotóból.</span></figcaption>
+          </figure>
+
+          <figure class="item" data-cat="cerna">
+            <a href="img/munkak/absztrakt.webp" data-w="1200" data-h="1600">
+              <img src="img/munkak/kicsi/absztrakt.webp" width="540" height="720" loading="lazy" alt="Absztrakt cérnakép színes mezőkkel">
+            </a>
+            <figcaption><strong>Absztrakt</strong><span>Színes mezők, mindegyik más irányú szálakkal.</span></figcaption>
+          </figure>
+
+          <figure class="item" data-cat="egetett">
+            <a href="img/munkak/cilinderes-cica.webp" data-w="1357" data-h="1600">
+              <img src="img/munkak/kicsi/cilinderes-cica.webp" width="611" height="720" loading="lazy" alt="Cilinderes, csokornyakkendős macska fára égetve">
+            </a>
+            <figcaption><strong>Úriember</strong><span>Cilinder, csokornyakkendő, komoly tekintet.</span></figcaption>
+          </figure>
+
+          <figure class="item" data-cat="tabla">
+            <a href="img/munkak/sorozo-tabla.webp" data-w="1600" data-h="1200">
+              <img src="img/munkak/kicsi/sorozo-tabla.webp" width="720" height="540" loading="lazy" alt="Söröző cégtábla égetett felirattal és szögekből kirakott betűkkel">
+            </a>
+            <figcaption><strong>Söröző cégtábla</strong><span>Égetett felirat, a név szögekből kirakva.</span></figcaption>
+          </figure>
+
+          <figure class="item" data-cat="ajandek">
+            <a href="img/munkak/gyerekszoba-ora.webp" data-w="1200" data-h="1600">
+              <img src="img/munkak/kicsi/gyerekszoba-ora.webp" width="540" height="720" loading="lazy" alt="Színes, gyerekfigurás fa falióra">
+            </a>
+            <figcaption><strong>Falióra gyerekszobába</strong><span>Színes figurákkal, születésnapi felirattal.</span></figcaption>
+          </figure>
+
+          <figure class="item" data-cat="cerna">
+            <a href="img/munkak/szinkor.webp" data-w="1200" data-h="1600">
+              <img src="img/munkak/kicsi/szinkor.webp" width="540" height="720" loading="lazy" alt="Kerek színkör cérnakép a szivárvány színeivel">
+            </a>
+            <figcaption><strong>Színkör</strong><span>Kerek alapon, a szivárvány összes színével.</span></figcaption>
+          </figure>
+
+          <figure class="item" data-cat="egetett">
+            <a href="img/munkak/jack-daniels.webp" data-w="1200" data-h="1600">
+              <img src="img/munkak/kicsi/jack-daniels.webp" width="540" height="720" loading="lazy" alt="Jack Daniel's címke fára égetve">
+            </a>
+            <figcaption><strong>Jack Daniel's</strong><span>Italcímke falra, bárba vagy a pincébe.</span></figcaption>
+          </figure>
+
+          <figure class="item" data-cat="ajandek">
+            <a href="img/munkak/teasdobozok.webp" data-w="1600" data-h="1200">
+              <img src="img/munkak/kicsi/teasdobozok.webp" width="720" height="540" loading="lazy" alt="Rekeszes fa teásdobozok virág- és méhecskemintával">
+            </a>
+            <figcaption><strong>Teásdobozok</strong><span>Rekeszes doboz, virággal és méhecskével.</span></figcaption>
+          </figure>
+
+          <figure class="item" data-cat="tabla">
+            <a href="img/munkak/mosdo-tablak.webp" data-w="1200" data-h="1600">
+              <img src="img/munkak/kicsi/mosdo-tablak.webp" width="540" height="720" loading="lazy" alt="Női és férfi mosdó jelzése cérnából, sárga fa alapon">
+            </a>
+            <figcaption><strong>Mosdótáblák</strong><span>Cérnából, nyíllal, hogy senki ne tévedjen el.</span></figcaption>
+          </figure>
+
+          <figure class="item" data-cat="egetett">
+            <a href="img/munkak/nepi-motivumos-tabla.webp" data-w="1200" data-h="1600">
+              <img src="img/munkak/kicsi/nepi-motivumos-tabla.webp" width="540" height="720" loading="lazy" alt="Népi virágmotívumos keretben égetett szöveg fatáblán">
+            </a>
+            <figcaption><strong>Népi motívumos tábla</strong><span>Saját szöveggel, virágos koszorúval.</span></figcaption>
+          </figure>
+
+          <figure class="item" data-cat="ajandek">
+            <a href="img/munkak/eskuvoi-emlekkep.webp" data-w="1200" data-h="1600">
+              <img src="img/munkak/kicsi/eskuvoi-emlekkep.webp" width="540" height="720" loading="lazy" alt="Bekeretezett esküvői emlékkép nevekkel, dátummal és autóval">
+            </a>
+            <figcaption><strong>Esküvői emlékkép</strong><span>Nevekkel, dátummal, keretben.</span></figcaption>
+          </figure>
+        </div>
+
+        <p class="gallery-more">Valami hasonlót szeretnél, csak a saját ötleteddel? <a href="#kapcsolat">Írd meg, és megbeszéljük.</a></p>
+      </div>
+    </section>
+
+    <!-- Folyamat -->
+    <section class="section process" id="igy-keszul" aria-labelledby="igy-keszul-cim">
+      <div class="wrap process-grid">
+        <div class="process-text">
+          <p class="kicker">Így készül</p>
+          <h2 id="igy-keszul-cim">Az ötlettől a falig</h2>
+          <ol class="steps">
+            <li>
+              <h3>Írsz nekem</h3>
+              <p>Elmondod, mit szeretnél, kb. mekkorában és mikorra. Ha van fotó, minta vagy logó, küldd el, sokat segít.</p>
+            </li>
+            <li>
+              <h3>Megbeszéljük a részleteket</h3>
+              <p>Méret, faanyag, színek, felirat. A mintát is egyeztetjük, mielőtt nekiállok. Az árat ekkor mondom meg, mert minden darab más.</p>
+            </li>
+            <li>
+              <h3>Elkészítem</h3>
+              <p>Csiszolás, égetés vagy szögelés és cérnázás, a végén több réteg lakk. Ezt nem lehet elsietni.</p>
+            </li>
+            <li>
+              <h3>Átadás</h3>
+              <p>Az átvételt egyeztetjük. Ez a kedvenc részem, amikor valaki először meglátja.</p>
+            </li>
+          </ol>
+          <p class="material-note">A fáról: a nyírfa az egyik kedvencem, egyenletes és világos, szépen viszi a vonalat. Dolgoztam már fenyődeszkával, rétegelt lemezzel, és egy kb. százéves hordóból is készült már esküvői ajándék.</p>
+        </div>
+        <div class="process-media">
+          <figure class="pm pm-1">
+            <img src="img/muhely/egetes-kozben.webp" width="1050" height="1400" loading="lazy" alt="Félkész égetett kép, farkas sziluett a deszkán, mellette a pirográf tolla">
+            <figcaption>Égetés közben</figcaption>
+          </figure>
+          <figure class="pm pm-2">
+            <img src="img/muhely/pirograf.webp" width="1400" height="1050" loading="lazy" alt="Pirográf készülék és cserélhető égetőhegyek az asztalon">
+            <figcaption>A pirográf és a hegyek</figcaption>
+          </figure>
+          <figure class="pm pm-3">
+            <img src="img/muhely/cernak-szogek.webp" width="1400" height="1083" loading="lazy" alt="Színes cérnaorsók és szögek sorban egy deszkán">
+            <figcaption>Cérna és szög, sok-sok</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rólam -->
+    <section class="section about" id="rolam" aria-labelledby="rolam-cim">
+      <div class="wrap about-grid">
+        <div class="about-media">
+          <img src="img/muhely/piropista-tabla.webp" width="1400" height="903" loading="lazy" alt="A PiroPista logó: P betű lekerekített keretben, Piro Pista felirattal, fekete-sárga fatáblán">
+          <img src="img/muhely/logo-szogekkel.webp" width="1118" height="1400" loading="lazy" alt="Fára égetett PiroPista logó, előtte szögek és kézi fúró">
+        </div>
+        <div class="about-text">
+          <p class="kicker">Rólam</p>
+          <h2 id="rolam-cim">Szabó István Attila, vagyis PiroPista</h2>
+          <p>Egy egyszerű piropákával kezdtem. Aztán jött egy rendes pirogép, később a lézer, közben pedig rákaptam a cérnaképekre is. Ma már a munkáim nagy része megrendelés, és ennek a többsége ajándék: valaki meg akar lepni valakit, én pedig segítek benne.</p>
+          <p>Nincs két egyforma darab. A fa mindig kicsit másképp viselkedik, a cérna sem mindig azt csinálja, amit szeretnék, és pont ettől lesz mindegyik a sajátja. Az, hogy amit csinálok, másnak örömet okoz, nekem a legjobb része az egésznek.</p>
+          <p>Ha alkotni akar az ember, akkor alkosson. Én ezt próbálom.</p>
+
+          <ul class="facts">
+            <li><strong>442 szög</strong> ment egyetlen esküvői képbe, amit édesanyám esküvőjére készítettem.</li>
+            <li><strong>67×50 cm</strong>-es autós kép szakrajzzal, a tengelytávot is a gyári adatokból vettem.</li>
+            <li><strong>Ajándék</strong> a Punnany Massifnak a SZIN-en, a SpeedZone csapatának és a kunmadarasi 24 órás veteránverseny szervezőinek.</li>
+            <li><strong>Több mint ezren</strong> követik a munkáimat a PiroPista Facebook-csoportban.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kapcsolat -->
+    <section class="section contact" id="kapcsolat" aria-labelledby="kapcsolat-cim">
+      <div class="wrap contact-grid">
+        <div class="contact-text">
+          <p class="kicker">Kapcsolat</p>
+          <h2 id="kapcsolat-cim">Rendelnél valamit? Írj nyugodtan.</h2>
+          <p>A leggyorsabban Messengeren érsz el. Írd meg, mit szeretnél, és ha tudsz, küldj hozzá képet vagy mintát. Az ár a mérettől, az anyagtól és a munka mennyiségétől függ, ezért minden kérést külön nézek meg, és utána mondok árat.</p>
+
+          <ul class="channels">
+            <li>
+              <a class="channel" href="https://m.me/ecko6" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.36 2 2 6.13 2 11.7c0 2.91 1.19 5.44 3.14 7.17.16.15.26.35.27.57l.05 1.78c.02.57.6.94 1.12.71l1.99-.88c.17-.07.36-.09.53-.04.91.25 1.88.39 2.9.39 5.64 0 10-4.13 10-9.7S17.64 2 12 2Zm6 7.46-2.94 4.66a1.5 1.5 0 0 1-2.17.4l-2.34-1.75a.6.6 0 0 0-.72 0l-3.16 2.4c-.42.32-.97-.18-.69-.63l2.94-4.66a1.5 1.5 0 0 1 2.17-.4l2.34 1.75c.21.16.51.16.72 0l3.16-2.4c.42-.32.97.18.69.63Z"/></svg>
+                <span><strong>Messenger</strong><small>Itt válaszolok a leghamarabb</small></span>
+              </a>
+            </li>
+            <li>
+              <a class="channel" href="https://www.facebook.com/ecko6" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12Z"/></svg>
+                <span><strong>Facebook</strong><small>Szabó István Attila</small></span>
+              </a>
+            </li>
+            <li>
+              <a class="channel" href="https://www.facebook.com/groups/2802925033284718/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-8 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4Zm8 0c-.29 0-.62.02-.97.05A4.2 4.2 0 0 1 17 17v2h7v-2c0-2.66-5.33-4-8-4Z"/></svg>
+                <span><strong>PiroPista csoport</strong><small>Az összes eddigi munka</small></span>
+              </a>
+            </li>
+            <li>
+              <a class="channel" href="https://www.instagram.com/piro.pista/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7.3a4.7 4.7 0 1 0 0 9.4 4.7 4.7 0 0 0 0-9.4Zm0 7.75a3.05 3.05 0 1 1 0-6.1 3.05 3.05 0 0 1 0 6.1Zm5.99-7.94a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0ZM21.1 8.2c-.07-1.5-.41-2.83-1.51-3.92-1.1-1.1-2.42-1.44-3.92-1.51C14.13 2.68 9.87 2.68 8.33 2.77c-1.5.07-2.82.41-3.92 1.5-1.1 1.1-1.44 2.42-1.51 3.92-.09 1.54-.09 6.08 0 7.62.07 1.5.41 2.83 1.51 3.92 1.1 1.1 2.42 1.44 3.92 1.51 1.54.09 6.08.09 7.62 0 1.5-.07 2.83-.41 3.92-1.51 1.1-1.1 1.44-2.42 1.51-3.92.09-1.54.09-6.08 0-7.62Zm-1.98 9.27a3.12 3.12 0 0 1-1.76 1.76c-1.22.48-4.11.37-5.46.37s-4.24.11-5.46-.37a3.12 3.12 0 0 1-1.76-1.76c-.48-1.22-.37-4.11-.37-5.46s-.11-4.24.37-5.46a3.12 3.12 0 0 1 1.76-1.76c1.22-.48 4.11-.37 5.46-.37s4.24-.11 5.46.37a3.12 3.12 0 0 1 1.76 1.76c.48 1.22.37 4.11.37 5.46s.11 4.24-.37 5.46Z"/></svg>
+                <span><strong>Instagram</strong><small>@piro.pista</small></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="order-form" id="urlap" novalidate>
+          <h3>Állítsd össze az üzeneted</h3>
+          <p class="form-intro">Töltsd ki, amit tudsz. A gombra kattintva az üzenet a vágólapra kerül, és megnyílik a Messenger, ott csak be kell illesztened.</p>
+
+          <div class="field">
+            <label for="nev">Neved</label>
+            <input id="nev" name="nev" type="text" autocomplete="name" required>
+          </div>
+
+          <fieldset class="field">
+            <legend>Mire gondoltál?</legend>
+            <div class="chips">
+              <label><input type="radio" name="tipus" value="Égetett kép" checked><span>Égetett kép</span></label>
+              <label><input type="radio" name="tipus" value="Cérnakép"><span>Cérnakép</span></label>
+              <label><input type="radio" name="tipus" value="Tábla"><span>Tábla</span></label>
+              <label><input type="radio" name="tipus" value="Ajándék"><span>Ajándék</span></label>
+              <label><input type="radio" name="tipus" value="Még nem tudom"><span>Még nem tudom</span></label>
+            </div>
+          </fieldset>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="meret">Méret <span class="opt">(ha tudod)</span></label>
+              <input id="meret" name="meret" type="text" placeholder="pl. 40×30 cm">
+            </div>
+            <div class="field">
+              <label for="hatarido">Mikorra kellene?</label>
+              <input id="hatarido" name="hatarido" type="text" placeholder="pl. december 15.">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="leiras">Mit szeretnél?</label>
+            <textarea id="leiras" name="leiras" rows="5" required placeholder="Pl. a kutyánk portréja egy fotó alapján, a nevével, nappaliba."></textarea>
+          </div>
+
+          <button class="btn btn-primary btn-block" type="submit">Másolás és Messenger megnyitása</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+          <details class="form-fallback">
+            <summary>Nem működik a másolás?</summary>
+            <p>Jelöld ki és másold ki az alábbi szöveget, aztán illeszd be a Messengerbe.</p>
+            <textarea id="kesz-uzenet" rows="6" readonly></textarea>
+          </details>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><use href="#logo-p"/></svg>
+        <div>
+          <p class="footer-name">PiroPista</p>
+          <p class="footer-motto">Pista neked éget!</p>
+        </div>
+      </div>
+      <nav class="footer-links" aria-label="Közösségi oldalak">
+        <a href="https://m.me/ecko6" target="_blank" rel="noopener">Messenger</a>
+        <a href="https://www.facebook.com/groups/2802925033284718/" target="_blank" rel="noopener">Facebook-csoport</a>
+        <a href="https://www.instagram.com/piro.pista/" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+      <div class="footer-bottom">
+        <p class="footer-copy">© <span id="ev">2026</span> Szabó István Attila · Minden kép a saját munkám.</p>
+        <p class="footer-credit">A weboldalt készítette: <a href="https://kisskorboy.hu" target="_blank" rel="noopener">Kisskorboy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Nagyító -->
+  <dialog class="lightbox" id="nagyito" aria-label="Kép nagyítva">
+    <button class="lb-close" type="button" aria-label="Bezárás">×</button>
+    <button class="lb-nav lb-prev" type="button" aria-label="Előző kép">‹</button>
+    <figure class="lb-figure">
+      <img alt="">
+      <figcaption></figcaption>
+    </figure>
+    <button class="lb-nav lb-next" type="button" aria-label="Következő kép">›</button>
+  </dialog>
+
+  <!-- Logó -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="logo-p" viewBox="0 0 48 48">
+      <path d="M30 4H13a9 9 0 0 0-9 9v22a9 9 0 0 0 9 9h22a9 9 0 0 0 9-9V20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+      <path d="M19.5 36.5c1.6-6.2 2.9-13.4 3.4-21.3M17.2 17.6c2.7-3.2 6.6-4.6 10.2-4 4 .7 5.6 4.2 3.6 7.6-1.9 3.3-6.4 5-10.6 4.4" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </svg>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
