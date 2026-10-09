@@ -266,7 +266,7 @@ p { margin: 0 0 1em; }
   display: inline-flex; align-items: center; gap: 10px;
   text-decoration: none; color: var(--ink);
 }
-.brand-mark { width: 34px; height: 34px; color: var(--ember); flex: none; }
+.brand-mark { width: 40px; height: 40px; color: var(--ember); flex: none; }
 .brand-name {
   font-family: var(--serif);
   font-size: 1.4rem;
